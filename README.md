@@ -1,1 +1,17 @@
-# Android Open Source Project
+Rich test plan table for https://android-review.googlesource.com/c/platform/packages/apps/Launcher3/+/2379074
+
+**BEFORE**
+
+|                           | 3-button navigation                                                                                                         | Gesture navigation                                                                                                  |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Orig. opened via icon     | [Fast-finish anim freezes](https://drive.google.com/file/d/1dIvydK-Y2btly80LhLm5fD4D5FqzX_1j/view?usp=sharing) ⚠️          | [Fast-finish anim skips to end](https://drive.google.com/file/d/1u1h6_8HW_BecqFnpxXmz3175_2HNX_C-/view?usp=sharing) |
+| Orig. opened via widget   | [Fast-finish anim freezes](https://drive.google.com/file/d/1hSji1pcS863krlShyyePtwwQJLS-DkTj/view?usp=sharing) ⚠️          | [Fast-finish anim skips to end](https://drive.google.com/file/d/1DiN4DxlHR3DcOsrOwNHiRoYFXMQA8p-L/view?usp=sharing) |
+| Orig. opened via app list | [Fast-finish anim doesn't skip to end](https://drive.google.com/file/d/1n6WSNdd76thF7hJEKq-xJ5SddwkDSYeG/view?usp=sharing)  | [Fast-finish anim skips to end](https://drive.google.com/file/d/1FUZCZ-o97jICT5KVfxyQStKBP7SDBo-E/view?usp=sharing) |
+
+**AFTER**
+
+|                           | 3-button navigation                       | Gesture navigation            |
+|---------------------------|-------------------------------------------|-------------------------------|
+| Orig. opened via icon     | [Fast-finish anim skips to end](https://drive.google.com/file/d/1HA2nbYcSlulaVEivnvWwKdSqbl5IMK_X/view?usp=sharing)         | [Fast-finish anim skips to end](https://drive.google.com/file/d/1E3pX-N0rWqqyhmmPAlaEqVsi4Xw8gm6_/view?usp=sharing) |
+| Orig. opened via widget   | [Fast-finish anim skips to end](https://drive.google.com/file/d/11yVrN0DTHavzw_5DlCnAfHhWpMPmi7nT/view?usp=sharing)         | [Fast-finish anim skips to end](https://drive.google.com/file/d/1mv_YbRC0dLufaWXrib3k42jMeuCdbkdc/view?usp=sharing) |
+| Orig. opened via app list | [Fast-finish anim doesn't skip to end](https://drive.google.com/file/d/15lzuxXJPGh5un5ID3QjtGAjsvLZdm4_W/view?usp=sharing)  | [Fast-finish anim skips to end](https://drive.google.com/file/d/1yPTTr2kEjzQE6ibhvnXjfIUa6Ziz37It/view?usp=sharing) |
